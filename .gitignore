@@ -31,3 +31,20 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# Java / Spring
+target/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env
+
