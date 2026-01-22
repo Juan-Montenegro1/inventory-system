@@ -1,0 +1,38 @@
+package gm.inventarios.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import gm.inventarios.modelo.Producto;
+import gm.inventarios.repository.IproductoRepositorio;
+
+@Service
+public class ProductoService implements IProductoServicio {
+
+    @Autowired
+    private IproductoRepositorio productoRepositorio;
+
+    @Override
+    public List<Producto> listarProductos() {
+        return this.productoRepositorio.findAll();
+    }
+
+    @Override
+    public Producto buscarProductoPorId(Integer idProducto) {
+        Producto producto = this.productoRepositorio.findById(idProducto).orElse(null);
+        return producto;
+    }
+
+    @Override
+    public void guardarProducto(Producto producto) {
+        this.productoRepositorio.save(producto);
+    }
+
+    @Override
+    public void eliminarProductoPorId(Integer idProducto) {
+        this.productoRepositorio.deleteById(idProducto);
+    }
+    
+}

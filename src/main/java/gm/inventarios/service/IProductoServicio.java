@@ -1,0 +1,12 @@
+package gm.inventarios.service;
+
+import java.util.List;
+
+import gm.inventarios.modelo.Producto;
+
+public interface IProductoServicio {
+    List<Producto> listarProductos();
+    Producto buscarProductoPorId(Integer idProducto);
+    void guardarProducto(Producto producto);
+    void eliminarProductoPorId(Integer idProducto);
+}
