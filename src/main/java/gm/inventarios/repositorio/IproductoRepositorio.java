@@ -1,9 +1,9 @@
-package gm.inventarios.repository;
+package gm.inventarios.repositorio;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import gm.inventarios.modelo.Producto;
 
 public interface IproductoRepositorio extends JpaRepository<Producto, Integer> {
-    
+
 } 
