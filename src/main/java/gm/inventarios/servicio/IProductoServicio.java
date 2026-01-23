@@ -1,4 +1,4 @@
-package gm.inventarios.service;
+package gm.inventarios.servicio;
 
 import java.util.List;
 

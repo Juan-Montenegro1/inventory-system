@@ -1,4 +1,4 @@
-package gm.inventarios.service;
+package gm.inventarios.servicio;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import gm.inventarios.modelo.Producto;
-import gm.inventarios.repository.IproductoRepositorio;
+import gm.inventarios.repositorio.IproductoRepositorio;
 
 @Service
-public class ProductoService implements IProductoServicio {
+public class ProductoServicio implements IProductoServicio {
 
     @Autowired
     private IproductoRepositorio productoRepositorio;
